@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El arte es cultura</title>
+    <style>
+        .form-control small {
+            visibility: hidden;
+            color: red;
+        }
+
+        .form-control.error small {
+            visibility: visible;
+        }
+
+        .form-control.success input {
+            border-color: green;
+        }
+
+        .form-control.error input {
+            border-color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/css/arte.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="art-title"></a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ancient-art.html">Arte Antiguo</a></li>
+            <li><a href="modern-art.html">Arte Moderno </a></li>
+            <li><a href="contact.html">Contactos </a></li>
+            <li><a href="arte.html">Formulario de registro</a></li>
+        </ul>
+        <img src="./assets/img/Musas.png" class="img-Musas " alt="Musas">
+    </nav>
+    <div class="content">
+        <h1 id="registro">Regístrate para explorar el arte</h1>
+        <h3 id="datos">Datos personales:</h3>
+        <form id="formulario">
+            <div class="column-wrapper">
+                <div class="form-control" id="first-name">
+                    <label for="nombre">Digite su nombre</label>
+                    <input type="text" id="nombre" placeholder="* Digite su nombre" />
+                    <small>Error: es necesario digitar su nombre</small>
+                </div>
+        
+                <div class="form-control">
+                    <label for="apellido">*Digite sus apellidos</label>
+                    <input type="text" id="apellido" placeholder="* Digite sus apellidos" />
+                    <small>Error: es necesario digitar sus apellidos</small>
+                </div>
+            </div>
+        
+            <div class="column-wrapper">
+                <div class="form-control">
+                    <label for="correo">*Digite su correo electrónico</label>
+                    <input type="email" id="correo" placeholder="* Digite su correo electrónico" />
+                    <small>Error: debe digitar correctamente su correo</small>
+                </div>
+        
+                <div class="form-control">
+                    <label for="date">*Fecha de nacimiento</label>
+                    <input type="date" id="date" placeholder="* Fecha de nacimiento" />
+                    <small>Error: es necesaria la fecha de nacimiento.</small>
+                </div>
+            </div>
+        
+            <div class="column-wrapper">
+                <div class="form-control">
+                    <label for="contraseña">*Escriba su contraseña</label>
+                    <input type="password" id="contraseña" placeholder="* Digite su contraseña" />
+                    <small>Error: la contraseña debe contener al menos 8 caracteres.</small>
+                </div>
+        
+                <div class="form-control">
+                    <label for="confirmContraseña">*Confirme su contraseña</label>
+                    <input type="password" id="confirmContraseña" placeholder="* Confirme su contraseña" />
+                    <small>Error: las contraseñas no coinciden.</small>
+                </div>
+            </div>
+        
+            <button type="submit" id="submitbtn">Registrarse</button>
+            <p id="Exito" style="display: none;">¡Usted ha sido registrado en la página de arte!</p>
+        </form>
+        <p id="parrafo">Los campos marcados con * son obligatorios</p>
+    </div>
+    <footer class="footer-info">
+        <section>
+            <h1>Redes sociales </h1>
+            <div class="social-media">
+                <ul>
+                    <li><a href=""><img src="./assets/img/gorjeo.png" class="social-icon" alt="Twitter"></a></li>
+                    <li><a href=""><img src="./assets/img/instagram.png" class="social-icon" alt="Instagram"></a>
+                    <li><a href=""><img src="./assets/img/gmail.png" class="social-icon" alt="gmail"></a>
+                    <li><a href=""><img src="./assets/img/facebook.png" class="social-icon" alt="facebook"></a></li>
+                    <li><a href=""><img src="./assets/img/social.png" class="social-icon" alt="whatsapp"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="footer-info">
+            <p>&copy;2024 Arte</p>
+            <a href="privacidad.html">Política de Privacidad</a> |
+            <a href="terminos.html">Términos y Condiciones</a></p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/arte.js"></script>
+</body>
+
+</html>

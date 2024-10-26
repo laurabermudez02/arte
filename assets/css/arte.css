@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    display: grid;
+    place-content: center;
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1#registro {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+h3#datos {
+    font-size: 1.2rem;
+    color: #666666;
+    margin-bottom: 1.5rem;
+}
+
+.column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-control label {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.form-control label {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input {
+    width: 90%;
+    padding: 0.8rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-control input:focus {
+    border-color: #6c63ff;
+}
+
+.form-control.success input {
+    border-color: #28a745;
+}
+
+.form-control.error input {
+    border-color: #dc3545;
+}
+
+.form-control small {
+    font-size: 0.85rem;
+    color: #dc3545;
+    visibility: hidden;
+    margin-top: 0.25rem;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+#submitbtn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+#submitbtn:hover {
+    background-color: #5a52e0;
+}
+
+#Exito {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+#parrafo {
+    font-size: 0.85rem;
+    color: #666666;
+    margin-top: 1rem;
+}
